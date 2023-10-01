@@ -1,10 +1,9 @@
 .separator {
   font-size: 1.3em;
-  margin: 0 10px; /* Adjust the spacing as needed */
+  margin: 0 10px;
 }
 
 .postImage{
-  margin-left: 10px;
   width:250px;
   height: 250px;
   object-fit:cover;
@@ -30,33 +29,44 @@ main {
   overflow-y: auto; 
   max-height: calc(100vh - 10em); 
 }
+
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .profile-image {
   width: 40px;
   height: 40px; 
   object-fit: cover;
-  padding: 10 0 0 10;
+  margin-bottom: 1em;
+  margin-right: 1em;
 }
 
-.post-date {
-  font-size: 0.9em;
-  color: #545454; 
+main > div > div { /*child selector*/
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;  
 }
 
-.post p {
-  font-size: 1.2em;
-  padding: 0 0 10 10;
+.post p { /*descendant selector?*/
+  font-size: 1.5em;
+  color: #212121;
+  margin-bottom: 0em; 
 }
 
 .post{
-  background-color: rgb(224, 224, 224);
-  border-radius: 10px;  
+  padding: 1em;
+}
+
+.post ~ .post { /*general sibling selector*/
+  margin-top: 1em;
+}
+
+.profile-image + p {
+  color: #434242; 
+  font-size: 1em;
+  margin-top: -0.25em;
 }
 
 @media (max-width: 600px) {
@@ -69,12 +79,15 @@ main {
     width: 30px;
     height: 30px;
     object-fit: cover;
-    padding: 0 0 0 10px; 
   }
   .post p {
-    font-size: 1em;
-    padding: 0 0px 10px 10px; 
+    font-size: 0.9em;
   }
+  .profile-image + p {
+    color: #434242; 
+    font-size: 0.7em;
+  }
+  
 }
 
 .footer {
