@@ -7,6 +7,7 @@
     <link rel="icon" href="res/images/favicon.ico">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
 </head>
 
 <body>
@@ -16,4 +17,28 @@
         </ul>
         <a class="logo" href="login.html"><img id="logo" img src="res/images/icon.png" width="50" height="50" alt="Log in"></a>
     </header>
+    <div class="box">
+        <div>
+            <h2>Welcome to PostIt</h2>
+            <a href="#">Create an account</a>
+            <p>or</p>
+            <p>Please log in</p>
+            <form for="login" action="index.html">
+                <div class="input">
+                    <label for="email">
+                        <input type="email" placeholder="Email" required>
+                    </label>
+                </div>
+                <br>
+                <div class="input">
+                    <label for="password">
+                        <input type="password" placeholder="Password" required>
+                    </label>
+                </div>
+                <br>
+                <button tpye="submit" value="Log in">Log in</button>
+            </form>
+            <a href="#">Forget password</a>
+        </div>
+    </div>
 </body>

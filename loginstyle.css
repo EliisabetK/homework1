@@ -1,0 +1,49 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box > div{
+    width: 20em;
+    height: 24em;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10em auto;
+}
+a{
+    color: rgb(89, 80, 255);
+    text-decoration: none;
+}
+label input{
+    outline: none;
+    border: none;
+    padding: 0.5em 0em;
+    width: 32%;
+    margin: -0.2em;
+}
+
+input::placeholder{
+    color: rgb(173, 173, 173);
+    padding: 0.2em;
+}
+
+button{
+    display: inline-block;
+    background-color: rgb(0, 0, 195);
+    color: rgb(255, 255, 255);
+    border: none;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.3em;
+    margin-bottom: 3em;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 118);
+    color: rgb(159, 159, 159);
+}
+
+a:hover{
+    color: rgb(42, 38, 125);
+}
