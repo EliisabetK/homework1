@@ -68,6 +68,9 @@ main > div > div { /*child selector*/
   font-size: 1em;
   margin-top: -0.25em;
 }
+.like-image{
+  margin-bottom: -0.25em;
+}
 
 @media (max-width: 600px) {
   .postImage{
