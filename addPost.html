@@ -1,19 +1,38 @@
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="res/images/favicon.ico">
-        <title>addPost</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addpoststyle.css">
+</head>
 
-    <body>
-        <header class="header">
-            <ul class="nav">
-                <a href="index.html">Home</a>
-            </ul>
-            <a class="logo"><img id="logo" img src="res/images/icon.png" width="50" height="50" alt="Log in"></a>
-        </header>
-    </body>
+<body>
+    <header class="header">
+        <ul class="nav">
+            <a href="index.html">Home</a>
+        </ul>
+        <a class="logo" href="login.html"><img id="logo" img src="res/images/icon.png" width="50" height="50" alt="Log in"></a>
+    </header>
+    <div class="box">
+        <div>
+            <div class="gridbox">
+                <div class="postbodytext">Post<br />body</div>
+                <div class="textarea">
+                    <form>
+                        <textarea id="textarea" name="textarea" placeholder="textarea"></textarea>
+                      </form>
+                </div>
+                <div class="selectfiletext">Select<br />file</div>
+                <div class="choosefile">
+                    <button type="submit" value="Choose file">Choose File</div>
+                </div>
+                <div class="createpost" href="index.html">
+                    <button type="submit" value="Create post" onclick="window.location.href = 'index.html';">Create post</div>
+            </div>
+        </div>
+    </div>
+</body>
