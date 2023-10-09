@@ -25,7 +25,6 @@ label input{
 
 input::placeholder{
     color: rgb(173, 173, 173);
-    padding: 0.2em;
 }
 
 button{
