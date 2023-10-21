@@ -3,10 +3,21 @@
   margin: 0 10px;
 }
 
+.like-image{
+  height: 35px;
+  width: 35px;
+}
+
 .postImage{
   width:250px;
   height: 250px;
   object-fit:cover;
+}
+
+.username{
+  color: #232323;
+  font-size: 1em;
+  margin-top: -1.5em;
 }
 
 .container {
@@ -63,11 +74,12 @@ main > div > div { /*child selector*/
   margin-top: 1em;
 }
 
-.profile-image + p {
-  color: #434242; 
+.profile-image + p, .post-date {
+  color: #454545;
   font-size: 1em;
-  margin-top: -0.25em;
+  margin-top: -1em;
 }
+
 .like-image{
   margin-bottom: -0.25em;
 }
@@ -109,4 +121,14 @@ footer li {
   margin-right: 100;
   margin-left: 100;
   font-size: 1.2em;
+}
+
+.username {
+  color: #232323;
+  font-size: 1em;
+  margin-top: -3em;
+  margin-left: 3.5em; 
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center; 
 }
