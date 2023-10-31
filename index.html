@@ -17,7 +17,18 @@
             <span class="separator">|</span>
             <a href="addPost.html">addPost</a>
         </ul>
-        <a class="logo"><img id="logo" img src="res/images/icon.png" alt="Log in"></a>
+
+        <div class="dropdown">
+            <a class="logo" onclick="toggleDropdown()">
+                <img id="logo" src="res/images/icon.png" alt="Log in">
+            </a>
+            <div class="dropdown-content" id="info">
+                <p>Some One</p>
+                <p>some.one@ut.ee<p>
+                <p>logout<p>
+            </div>
+            <script src="res/js/script.js"></script>
+        </div>
     </header>
 
     <div class="container">

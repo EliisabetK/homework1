@@ -94,3 +94,12 @@ function formatDate(dateString) {
         return postDate.toLocaleDateString(undefined, options);
     }
 }
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("info")
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}

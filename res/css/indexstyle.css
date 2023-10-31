@@ -32,6 +32,7 @@
   border-radius: 10px;
   margin-top: 5em;
   position: sticky;
+  z-index: -1;
 }
 
 main {
@@ -131,4 +132,24 @@ footer li {
   margin-bottom: 2em;
   display: flex;
   align-items: center; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 1em;
+  background-color: #dedede;
+  border-radius: 10px;
+  padding: 0.2em;
+  min-width: 10em;
+  box-shadow: 0 0.1em 0.2em 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content p{
+  margin: 0.5em;
 }
