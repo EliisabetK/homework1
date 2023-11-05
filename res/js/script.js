@@ -1,8 +1,5 @@
-// pilte pole veel
-// keegi võiks profiili kõrvale username panna
 // json validator: https://jsonlint.com
 // https://www.npoint.io/docs/9becf83c2d3726750ce7
-// võibolla võiks css failid üheks teha
 
 function fetchAndDisplayPosts(jsonUrl) {
     fetch(jsonUrl)
@@ -16,22 +13,24 @@ function fetchAndDisplayPosts(jsonUrl) {
 
                 const postHeader = document.createElement('div');
                 postHeader.classList.add('post-header');
-                            
+                
+                const profileImageAndUserName = document.createElement('div');
+
                 // profile image
                 const profileImage = document.createElement('img');
                 profileImage.src = "res/images/icon.png";
                 profileImage.alt = "Profile Image";
                 profileImage.classList.add('profile-image');
 
-                postHeader.append(profileImage)
+                profileImageAndUserName.append(profileImage)
                 
-                /*
                 // username
                 const userName = document.createElement('text');
                 userName.textContent = post.creator_name;
                 userName.classList.add('username');
-                postProfile.append(userName)
-                */
+                profileImageAndUserName.append(userName)
+
+                postHeader.appendChild(profileImageAndUserName)
 
                 // date
                 const postDate = document.createElement('p');
@@ -75,8 +74,10 @@ function fetchAndDisplayPosts(jsonUrl) {
         .catch(error => console.error('Error fetching JSON:', error));
 }
 
-// url (tuleks teha failiks ja välja kommenteerida)
+// url
 const jsonUrl = 'https://api.npoint.io/9becf83c2d3726750ce7';
+
+//const jsonUrl = "res/js/posts.json"
 fetchAndDisplayPosts(jsonUrl);
 
 // formats the date to be in the style of "Oct 4, 2023"
